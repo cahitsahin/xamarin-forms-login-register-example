@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExampleLoginRegisterApp.RegisterPage"  BackgroundColor="#BF043055"
+            
+             >
+
+
+    <ScrollView Orientation="Vertical">
+   <StackLayout Orientation="Vertical" Padding="30" Spacing="60" >
+
+        <BoxView HeightRequest="10"/>
+
+        <Image HorizontalOptions="Center" WidthRequest="100" Source="register.png"/>
+
+        <Frame BackgroundColor="#BF043055" HasShadow="True">
+
+            <StackLayout Orientation="Vertical" Spacing="30">
+
+
+                <Entry x:Name="Email"  Placeholder="Email"   
+                           PlaceholderColor="White" HeightRequest="50"   
+                           Keyboard="Email"  
+                           TextColor="White"/>
+                <Entry x:Name="Password"  Placeholder="Password"   
+                           PlaceholderColor="White" HeightRequest="50"   
+                           IsPassword="True"  
+                           TextColor="White"/>
+
+
+
+                <Button Text="Regıster" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" Clicked="OnRegisterButtonClicked"  />
+
+            </StackLayout>
+
+
+
+        </Frame>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>  
